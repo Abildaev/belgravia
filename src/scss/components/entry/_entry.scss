@@ -1,0 +1,317 @@
+.entry {
+
+  &__bg {
+    min-height: rem(800px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include lg {
+      min-height: rem(600px);
+    }
+
+    @include md {
+      min-height: rem(500px);
+    }
+
+    @include sm {
+      min-height: rem(450px);
+    }
+
+    @include xs {
+      padding: rem(30px) 0;
+      min-height: auto;
+      min-height: rem(400px);
+    }
+
+
+
+    .cb-slideshow {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+
+      &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#191919, 0.8);
+      }
+
+      li {
+        span {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 0;
+          color: transparent;
+          background-size: cover;
+          background-position: 50% 50%;
+          background-repeat: none;
+          opacity: 0;
+          -webkit-animation: imageAnimation 36s linear infinite 0s;
+          animation: imageAnimation 36s linear infinite 0s;
+        }
+
+        &:nth-child(2) span {
+          -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+        }
+
+        &:nth-child(3) span {
+          -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+        }
+
+        &:nth-child(4) span {
+          -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+        }
+
+        &:nth-child(5) span {
+          -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+        }
+
+        &:nth-child(6) span {
+          -webkit-animation-delay: 30s;
+          animation-delay: 30s;
+        }
+      }
+    }
+
+    @-webkit-keyframes imageAnimation {
+      0% {
+        opacity: 0;
+        -webkit-animation-timing-function: ease-in;
+      }
+
+      8% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        -webkit-animation-timing-function: ease-out;
+      }
+
+      17% {
+        opacity: 1;
+        -webkit-transform: scale(1.1);
+      }
+
+      25% {
+        opacity: 0;
+        -webkit-transform: scale(1.1);
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    @keyframes imageAnimation {
+      0% {
+        opacity: 0;
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+      }
+
+      8% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+
+      17% {
+        opacity: 1;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+
+      25% {
+        opacity: 0;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    .no-cssanimations .cb-slideshow li span {
+      opacity: 1;
+    }
+
+  }
+
+  &__item {
+    text-align: center;
+
+
+  }
+
+  &__slider {
+    position: relative;
+    z-index: 9999;
+    color: $wc;
+    margin-top: rem(-125px);
+
+    @include lg {
+      margin-top: rem(-90px);
+    }
+
+    @include md {
+      margin-top: rem(-50px);
+    }
+
+    @include sm {
+      margin-top: rem(-30px);
+    }
+
+    @include xs {
+      margin-top: 0;
+    }
+  }
+
+  &__name {
+    font-size: rem(18px);
+    font-weight: 400;
+    line-height: 2.67;
+    letter-spacing: 3.6px;
+
+    @include lg {
+      font-size: rem(16px);
+    }
+
+    @include md {
+      font-size: rem(15px);
+    }
+
+    @include sm {
+      letter-spacing: normal;
+      line-height: normal;
+      margin-bottom: rem(10px);
+    }
+  }
+
+  &__title {
+    font-size: rem(30px);
+    line-height: 1.6;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding: rem(15px) 0 rem(13px);
+    margin-bottom: rem(20px);
+
+    @include lg {
+      font-size: rem(25px);
+      padding: rem(13px) 0 rem(11px);
+      margin-bottom: rem(15px);
+    }
+
+    @include md {
+      font-size: rem(20px);
+      padding: rem(10px) 0 rem(8px);
+      margin-bottom: rem(10px);
+    }
+
+    @include sm {
+      font-size: rem(18px);
+    }
+
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      height: rem(1px);
+      background-color: #d5d5d5;
+      max-width: 75%;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+  }
+
+  &__desc {
+    color: #d5d5d5;
+    line-height: 1.33;
+    font-size: rem(18px);
+    max-width: rem(800px);
+    width: 100%;
+    margin: auto;
+    margin-bottom: rem(35px);
+    box-sizing: border-box;
+    padding: 0 rem(40px);
+
+    @include md {
+      font-size: rem(14px);
+    }
+
+    @include xs {
+      min-width: 100%;
+      padding: 0;
+    }
+
+  }
+}
+
+.entry-js {
+  .navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 9;
+    width: 100%;
+
+    @include xs {
+      display: none;
+    }
+  }
+
+  .prev {
+    i {
+      transform: rotate(180deg);
+      position: absolute;
+    }
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    width: rem(40px);
+    height: rem(40px);
+    border-radius: 100%;
+    background-color: rgba($wc, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      color: $wc;
+    }
+  }
+}

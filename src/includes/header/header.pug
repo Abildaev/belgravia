@@ -1,0 +1,26 @@
+header.header#top
+  .header__top
+    .container
+      .header__top-wrap.wow.fadeInDown
+        .header__contat
+          p 
+            i.icon-call-answer
+            | 0(559,779,709,312) 88 11 11
+          a(href="mailto:nurzamann-mail-ru")
+            i.icon-mail
+            | nurzamann-mail-ru 
+        include ../../includes/social/social
+  .header__masterbar.wow.fadeInUp
+    .container
+      .header__masterbar-wrap
+        .logo
+          a(href="#top" data-scroll)
+            img(src="assets/img/logo.svg" alt="")
+        .header__control      
+          .header.nav
+            include ../../includes/nav/nav
+          .btn-wrap
+            a(data-fancybox="" data-src="#consultation" href="javascript:;").btn.btn_painted
+              |заказть звонок
+
+
