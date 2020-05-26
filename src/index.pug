@@ -1,6 +1,6 @@
 extends layout/main/main
 block title
-  | main
+  | жилой комплекс премиум класса белгравиа
 block main  
   include includes/preloader/preloader
   include includes/hamburger/hamburger
@@ -201,11 +201,11 @@ block main
             #parent.blocks
               ul.tabs
                 li.tabs__item.btn-wrap
-                  a(href='#parent-1').btn.btn_hollow Блок А
+                  a(href='#parent-1').btn.btn_hollow Блок 1
                 li.tabs__item.btn-wrap
-                  a(href='#parent-2').btn.btn_hollow Блок Б
+                  a(href='#parent-2').btn.btn_hollow Блок 2
                 li.tabs__item.btn-wrap
-                  a(href='#parent-3').btn.btn_hollow Блок В
+                  a(href='#parent-3').btn.btn_hollow Блок 3
 
 
               #parent-1
@@ -233,9 +233,8 @@ block main
                                 .blocks__slider-title=title
                                 .blocks__slider-desc=desc
 
-                          +twoRoom('assets/img/plan/2a1.jpg','2 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
-                          +twoRoom('assets/img/plan/2a2.jpg','2 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
-                          +twoRoom('assets/img/plan/2a3.jpg','2 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
+                          +twoRoom('assets/img/plan/1b.jpg')
+                          
                         .navigation
                           .prev
                             i.icon-virustotal-icon
@@ -245,20 +244,26 @@ block main
                       .blocks__about-list
                         ul
 
-                          li Холл- 10,24 м 
+                          li Холл- 12,59 м 
                             sup 2
-                          li Кухня- 20,45 м
+                          li Студия- 27,34 м
                             sup 2
-                          li Сан узел- 8,5 м
+                          li Сан узел 1- 5,01 м
                             sup 2
-                          li Ванная- 10,14 м
+                          li Сан узел 2- 4,16 м
                             sup 2
-                          li Гостинная- 25,34 м
+                          li Спальня 1- 16,63 м
                             sup 2
-                          li ИТОГО- 76,45 м 
+                          li Спальня 2- 11,99 м
+                            sup 2
+                          li Балкон - 3,7 м
+                            sup 2
+                          li Гардероб - 3,18 м
+                            sup 2
+                          li ИТОГО- 84,60 м 
                             sup 2
                       .blocks__about-title
-                        |2-А
+                        |1-Б
 
 
 
@@ -273,8 +278,8 @@ block main
                                   img(src=img alt="")
                                 .blocks__slider-title=title
                                 .blocks__slider-desc=desc
-                          +fourRoom('assets/img/plan/4a1.jpg','4 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
-                          +fourRoom('assets/img/plan/4a2.jpg','4 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
+                          +fourRoom('assets/img/plan/4a.jpg')
+                         
 
                         .navigation
                           .prev
@@ -284,40 +289,37 @@ block main
                     .blocks__item.blocks__item_about
                       .blocks__about-list
                         ul
-                          li Холл- 10,24 м 
+                          li Холл- 19,30 м 
                             sup 2
-                          li Кухня- 20,45 м
+                          li Кухня- 16,39 м
                             sup 2
-                          li Сан узел- 8,5 м
+                          li Гостинная- 25,96 м
                             sup 2
-                          li Ванная- 10,14 м
+                          li Сан узел 1- 3,78 м
                             sup 2
-                          li Гостинная- 25,34 м
+                          li Сан узел 2- 3,18 м
                             sup 2
-                          li ИТОГО- 76,45 м 
+                          li Сан узел 3- 3,25 м
+                            sup 2
+
+                          li Спальня 1- 21,03 м
+                            sup 2
+                          li Спальня 2- 16,12 м
+                            sup 2
+                          li Спальня 3- 20,96 м
+                            sup 2
+                          li Гардероб 1- 4,43 м
+                            sup 2
+                          li Гардероб 2- 5,19 м
+                            sup 2
+                          li Балкон 1- 3,99 м
+                            sup 2
+                          li Балкон 2- 4,83 м
+                            sup 2
+                          li ИТОГО- 148,41 м 
                             sup 2
                       .blocks__about-title
-                        |4-А
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        |1-А
 
               #parent-2
                 .blocks__wrap
@@ -343,9 +345,8 @@ block main
                                 .blocks__slider-title=title
                                 .blocks__slider-desc=desc
 
-                          +oneRoom('assets/img/plan/1a1.jpg','1 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
-                          +oneRoom('assets/img/plan/1a2.jpg','1 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
-                          +oneRoom('assets/img/plan/1a3.jpg','1 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
+                          +oneRoom('assets/img/plan/2b.jpg')
+                          +oneRoom('assets/img/plan/3b.jpg')
                         .navigation
                           .prev
                             i.icon-virustotal-icon
@@ -355,20 +356,22 @@ block main
                       .blocks__about-list
                         ul
 
-                          li Холл- 10,24 м 
+                          li Холл- 5,7 м 
                             sup 2
-                          li Кухня- 20,45 м
+                          li Кухня- 11,74 м
                             sup 2
-                          li Сан узел- 8,5 м
+                          li Сан узел 1- 3,39 м
                             sup 2
-                          li Ванная- 10,14 м
+                          li Сан узел 2- 3,80 м
                             sup 2
-                          li Гостинная- 25,34 м
+                          li Спальня- 19,55 м
                             sup 2
-                          li ИТОГО- 76,45 м 
+                          li Балкон- 2,71 м
+                            sup 2
+                          li ИТОГО- 46,36 м 
                             sup 2
                       .blocks__about-title
-                        |1-А
+                        |2-Б,3-Б
 
 
                   #child-2.blocks__detail
@@ -383,8 +386,11 @@ block main
                                 .blocks__slider-title=title
                                 .blocks__slider-desc=desc
 
-                          +threeRoom('assets/img/plan/3a1.jpg','3 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
-                          +threeRoom('assets/img/plan/3a2.jpg','3 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
+                          +threeRoom('assets/img/plan/32a.jpg')
+                          +threeRoom('assets/img/plan/32b.jpg')
+                          +threeRoom('assets/img/plan/33a.jpg')
+                          +threeRoom('assets/img/plan/33b.jpg')
+                          
                         .navigation
                           .prev
                             i.icon-virustotal-icon
@@ -394,21 +400,31 @@ block main
                       .blocks__about-list
                         ul
 
-                          li Холл- 10,24 м 
+                          li Холл- 12,05 м 
                             sup 2
-                          li Кухня- 20,45 м
+                          li Кухня- 14,49 м
                             sup 2
-                          li Сан узел- 8,5 м
+                          li Сан узел 1- 4,39 м
                             sup 2
-                          li Ванная- 10,14 м
+                          li Сан узел 2- 4,54 м
                             sup 2
-                          li Гостинная- 25,34 м
+                          li Гостинная- 25,11 м
                             sup 2
-                          li ИТОГО- 76,45 м 
+                          li Спяльня 1- 17,36 м
+                            sup 2
+                          li Спяльня 2- 17,49 м
+                            sup 2
+                          li Гардероб 1- 1,88 м
+                            sup 2
+                          li Гардероб 2- 3,66 м
+                            sup 2
+                          li Балкон- 2,67 м
+                            sup 2
+                          
+                          li ИТОГО- 103,64 м 
                             sup 2
                       .blocks__about-title
-                        |3-А
-
+                        |2-А,2-В,3-А,3-В
 
 
 
@@ -447,9 +463,8 @@ block main
                                 .blocks__slider-title=title
                                 .blocks__slider-desc=desc
 
-                          +oneRoom('assets/img/plan/1a1.jpg','1 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
-                          +oneRoom('assets/img/plan/1a2.jpg','1 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
-                          +oneRoom('assets/img/plan/1a3.jpg','1 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
+                          +oneRoom('assets/img/plan/5bb.jpg')
+                          
                         .navigation
                           .prev
                             i.icon-virustotal-icon
@@ -459,20 +474,20 @@ block main
                       .blocks__about-list
                         ul
 
-                          li Холл- 10,24 м 
+                          li Холл- 8,63 м 
                             sup 2
-                          li Кухня- 20,45 м
+                          li Кухня- 13,24 м
                             sup 2
-                          li Сан узел- 8,5 м
+                          li Сан узел- 3,85 м
                             sup 2
-                          li Ванная- 10,14 м
+                          li Спальня- 18,53 м
                             sup 2
-                          li Гостинная- 25,34 м
+                          li Балкон- 3,01 м
                             sup 2
-                          li ИТОГО- 76,45 м 
+                          li ИТОГО- 47,26 м 
                             sup 2
                       .blocks__about-title
-                        |1-А
+                        |5-Б
 
 
                   #child-2.blocks__detail
@@ -487,9 +502,9 @@ block main
                                 .blocks__slider-title=title
                                 .blocks__slider-desc=desc
 
-                          +twoRoom('assets/img/plan/2a1.jpg','2 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
-                          +twoRoom('assets/img/plan/2a2.jpg','2 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
-                          +twoRoom('assets/img/plan/2a3.jpg','2 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
+                          +twoRoom('assets/img/plan/44a.jpg')
+                          +twoRoom('assets/img/plan/44b.jpg')
+                          +twoRoom('assets/img/plan/5b.jpg')
                         .navigation
                           .prev
                             i.icon-virustotal-icon
@@ -499,20 +514,24 @@ block main
                       .blocks__about-list
                         ul
 
-                          li Холл- 10,24 м 
+                          li Холл- 13,55 м 
                             sup 2
-                          li Кухня- 20,45 м
+                          li Кухня- 14,13 м
                             sup 2
-                          li Сан узел- 8,5 м
+                          li Сан узел 1- 3,93 м
                             sup 2
-                          li Ванная- 10,14 м
+                          li Сан узел 2- 4,08 м
                             sup 2
-                          li Гостинная- 25,34 м
+                          li Спальня- 16,90 м
                             sup 2
-                          li ИТОГО- 76,45 м 
+                          li Гостинная- 24,80 м
+                            sup 2
+                          li Балкон- 2,25 м
+                            sup 2
+                          li ИТОГО- 79,64 м 
                             sup 2
                       .blocks__about-title
-                        |2-А
+                        |4-А,4-Б,5-В
 
 
 
@@ -530,8 +549,7 @@ block main
                                 .blocks__slider-title=title
                                 .blocks__slider-desc=desc
 
-                          +threeRoom('assets/img/plan/3a1.jpg','3 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
-                          +threeRoom('assets/img/plan/3a2.jpg','3 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
+                          +threeRoom('assets/img/plan/4v.jpg')
                         .navigation
                           .prev
                             i.icon-virustotal-icon
@@ -554,7 +572,7 @@ block main
                           li ИТОГО- 76,45 м 
                             sup 2
                       .blocks__about-title
-                        |3-А
+                        |4-В
 
 
                   #child-4.blocks__detail
@@ -569,8 +587,7 @@ block main
                                 .blocks__slider-title=title
                                 .blocks__slider-desc=desc
 
-                          +fourRoom('assets/img/plan/4a1.jpg','4 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
-                          +fourRoom('assets/img/plan/4a2.jpg','4 комнатная квартира','Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов.')
+                          +fourRoom('assets/img/plan/5a.jpg')
                         .navigation
                           .prev
                             i.icon-virustotal-icon
@@ -580,17 +597,28 @@ block main
                       .blocks__about-list
                         ul
 
-                          li Холл- 10,24 м 
+                          li Холл- 23,21 м 
                             sup 2
-                          li Кухня- 20,45 м
+                          li Кухня- 14,49 м
                             sup 2
-                          li Сан узел- 8,5 м
+                          li Сан узел 1- 4,54 м
                             sup 2
-                          li Ванная- 10,14 м
+                          li Сан узел 2- 4,39 м
                             sup 2
-                          li Гостинная- 25,34 м
+                          li Сан узел 3- 3,95 м
                             sup 2
-                          li ИТОГО- 76,45 м 
+                          li Cпальня 1- 10,14 м
+                            sup 2
+                          li Cпальня 2- 15,24 м
+                            sup 2
+                          li Cпальня 3- 19,53 м
+                            sup 2             
+                          li Гостинная- 25,11 м
+                            sup 2
+                          li Балкон- 2,67 м
+                            sup 2
+ 
+                          li ИТОГО- 128,80 м 
                             sup 2
                       .blocks__about-title
                         |4-А
